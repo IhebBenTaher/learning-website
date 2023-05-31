@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="../images/logo.jpg" />
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/html.css">
+        <title>WebDev | cours HTML</title>
+    </head>
+    <body>
+        <img class="arrpl" src="../images/arp.jpg">
+        <header>
+            <div class="head">
+                <div>
+                    <img src="../images/logo.jpg">
+                    <span>WebDev</span>
+                </div>
+                <nav>
+                    <div>
+                        <div class="barre"></div>
+                        <div class="barre"></div>
+                        <div class="barre"></div>
+                    </div>
+                    <ul>
+                        <li id="hidden"><a href="#"></a></li>
+                        <li><a href="#1">Présentation du HTML</a></li>
+                        <li><a href="#2">Les balises</a></li>
+                        <li><a href="#3">Les attributs</a></li>
+                        <li><a href="#4">La structure de base</a></li>
+                        <li><a href="#5">Les balises du head</a></li>
+                        <li><a href="#6">Les balises structurantes</a></li>
+                        <li><a href="#7">Les balises du texte</a></li>
+                        <li><a href="#8">Les listes</a></li>
+                        <li><a href="#9">Les liens</a></li>
+                        <li><a href="#10">Les images, les audios et les vidéos</a></li>
+                        <li><a href="#11">Les tableaux</a></li>
+                        <li><a href="#12">Les formulaires</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="1">
+            <h1>Présentation du HTML</h1>
+            <p>HTML (ou HyperText Markup Language):</p>  
+            <p>Il a fait son apparition dès 1991 lors du lancement du Web.</p>
+            <p>Son rôle est de gérer et organiser le contenu.</p>
+            <p> C'est donc en HTML qu’on  écrit ce qui doit être affiché sur la page : du texte, des liens, des images… </p>
+        </section>
+        <section id="2">
+            <h1>Les balises</h1>
+            <p>Les pages HTML sont représentées de ce qu'on appelle des balises.</p>  
+            <p>Celles-ci sont invisibles à l'écran pour les visiteurs, mais elles permettent à l'ordinateur de comprendre ce qu'il doit afficher.</p>
+            <p>Les balises sont entourées de « chevrons », c'est-à-dire des symboles &lt; et >, comme ceci : &lt;balise></p>
+            <p>On distingue les balises en paires et les balises orphelines.</p>
+            <p>Les balises en paires s'ouvrent, contiennent du texte, et se ferment plus loin. Exemple: &lt;title>Ceci est un titre&lt;/title>. On distingue une balise ouvrante (&lt;title>) et une balise fermante (&lt;/title>) qui indique que le titre se termine.</p>
+            <p>Les balises orphelines sont celles qui servent le plus souvent à insérer un élément à un endroit précis. Il n'est pas nécessaire de délimiter son début et sa fin. Exemple: &lt;image /></p>
+        </section>
+        <section id="3">
+            <h1>Les attributs</h1>
+            <p>Les attributs sont un peu les options des balises.</p>  
+            <p>Ils viennent les compléter pour donner des informations supplémentaires.</p>
+            <p>L'attribut se place après le nom de la balise ouvrante et a le plus souvent une valeur de cette façon: &lt;balise attribut="valeur">.</balise></p>
+            <p>Exemple: &lt;image nom="photo.jpg" /></p>
+            <p>L'ordinateur comprend alors qu'il doit afficher l'image contenue dans le fichier photo.jpg.</p>
+        </section>
+        <section id="4">
+            <h1>La structure de base</h1>
+            <div class="s4d1">
+                <img class="s4i" src="../images/structure de base.png">
+                <div class="s4d2">
+                    <p>&lt;!DOCTYPE html>: C'est la toute première ligne s'appelle le doctype. Elle est indispensable car c'est elle qui indique qu'il s'agit bien d'une page web HTML.</p>  
+                    <p>&lt;html> ... &lt;/html>: C'est la balise principale du code. Elle englobe tout le contenu de la page.</p>
+                    <p>&lt;head> ... &lt;/head>: cette section donne quelques informations générales sur la page comme son titre, l'encodage (pour la gestion des caractères spéciaux), etc. Les informations que contient l'en-tête ne sont pas affichées sur la page, ce sont simplement des informations générales à destination de l'ordinateur.</p>
+                    <p>&lt;body> ... &lt;/body>: C'est là que se trouve la partie principale de la page. Tout ce qui sera écrit ici sera affiché à l'écran.</p>
+                </div>
+            </div>
+        </section>
+        <section id="5">
+            <h1>Les balises du head</h1>
+            <p>&lt;meta charset="utf-8" />: Cette balise indique l'encodage utilisé dans votre fichier .html. L'encodage indique la façon dont le fichier est enregistré. C'est lui qui détermine comment les caractères spéciaux vont s'afficher (accents, idéogrammes chinois et japonais, caractères arabes, etc.).</p>  
+            <p>&lt;title> … &lt;/title>: C'est le titre de la page. Toute page doit avoir un titre qui décrit ce qu'elle contient. Le titre ne s'affiche pas dans la page mais en haut de celle-ci càd dans l'onglet du navigateur.</p>
+            <p>&lt;link ... />: Cette balise permet de faire la liaison entre la page html et un autre fichier (CSS, JAVASCRIPT, icones...)</p>
+        </section>
+        <section id="6">
+            <h1>Les balises structurantes</h1>
+            <div class="s4d1">
+                <img class="s4i" src="../images/les balises structurantes.jpg">
+                <div class="s4d2">
+                    <p>&lt;header> ... &lt;/header>: C'est l'en-tête de la page. Il contient le plus souvent un logo, une bannière, un slogan...</p>  
+                    <p>&lt;nav> ... &lt;/nav>: Il regroupe généralement tous les liens principaux de navigation du site.</p>
+                    <p>&lt;section> ... &lt;/section>: Elle sert à regrouper des contenus en fonction de leur thématique.</p>
+                    <p>&lt;article> ... &lt;/article>: Il sert à englober une portion généralement autonome de la page</p>
+                    <p>&lt;aside> ... &lt;/aside>: Il est conçu pour contenir des informations complémentaires au document que l'on visualise.</p>
+                    <p>&lt;footer> ... &lt;/footer>: C'est le pied de la page. Il contient le plus souvent des liens de contact, le nom de l'auteur, les mentions légales...</p>
+                </div>
+            </div>
+        </section>
+        <section id="7">
+            <h1>Les balises du texte</h1>
+            <div class="s7">
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Les titres</h1>
+                        <p>En HTML on a le droit d'utiliser six niveaux de titres différents allant de &lt;h1> ... &lt;/h1> (le plus grand) jusqu'à &lt;h6> ... &lt;/h6> (le plus petit).</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/titrec.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/titree.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Les paragraphes</h1>
+                        <p>Ils sont très utiles pour organiser son texte en plusieurs paties.</p>
+                        <p>La syntaxe est &lt;p> ... &lt;/p></p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/paragraphec.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/paragraphee.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Mise bien en valeur</h1>
+                        <p>Il existe deux méthodes.</p>
+                        <p>Soit la balise &lt;b> qui rend le texte en gras.</p>
+                        <p>Soit la balise &lt;i> qui rend le texte emphasé.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/mise bien en valeurc.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/mise bien en valeure.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Mise un peu en valeur</h1>
+                        <p>De même, il existe deux méthodes.</p>
+                        <p>Soit la balise &lt;strong> qui rend le texte en gras.</p>
+                        <p>Soit la balise &lt;em> qui rend le texte emphasé.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/mise un peu en valeurc.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/mise un peu en valeure.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Soulignement</h1>
+                        <p>On utilise la balise &lt;u> pour souligner un texte.</p>
+                        <p>On utilise la balise &lt;del> pour barrer un texte.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/soulignementc.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/soulignemente.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Exposants et indices</h1>
+                        <p>On utilise la balise &lt;sup> pour mettre un texte en exposant.</p>
+                        <p>On utilise la balise &lt;sub> pour mettre un texte en indice.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/expc.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/expe.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="8">
+            <h1>Les listes</h1>
+            <div class="s7">
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Listes non ordonnées</h1>
+                        <p>Elle permet de lister un ensemble d'éléments sans ordre en les délimitant par la balise &lt;ul>.</p>
+                        <p>Chaque élément doit être délimité par la balise &lt;li>.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/ulc.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/ule.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Listes ordonnées</h1>
+                        <p>Elle permet de lister un ensemble d'éléments ordonnés en les délimitant par la balise &lt;ol>.</p>
+                        <p>Chaque élément doit être délimité par la balise &lt;li>.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/olc.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/ole.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Listes de description</h1>
+                        <p>Elle permet de lister un ensemble d'éléments à décrire en les délimitant par la balise &lt;dl>.</p>
+                        <p>Chaque élément est représenté par deux balises: La balise &lt;dt> contenant l'élément à décrire, suivie par la balise &lt;dd> contenant sa description.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/dlc.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/dle.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="9">
+            <h1>Les liens</h1>
+            <div class="s7">
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Lien dans le même site</h1>
+                        <p>Il permet de naviguer dans les pages du même site en utilsisant la balise &lt;a> ... &lt;/a>.</p>
+                        <p>On écrit le texte qu'on voudrait l'afficher entre les deux balises.</p>
+                        <p>On doit obligatoirement ajouter l'attribut href suivi du chemin relatif de la page à accéder.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/lien1c.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/lien1e.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Lien vers une ancre</h1>
+                        <p>Il permet de naviguer dans la même page en utilsisant la même balise &lt;a> ... &lt;/a>.</p>
+                        <p>On doit ajouter un identifiant id pour l'élément à accéder.</p>
+                        <p>Cette fois l'attribut href est suivi par #id.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/lien2c.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/lien2e.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Lien externe</h1>
+                        <p>Il permet d'accéder à d'autres sites, des serveurs FTP, des serveurs de news ou de télécharger un fichier en utilsisant la même balise &lt;a> ... &lt;/a>.</p>
+                        <p>Il suffit de suivre l'attribut href par le lien adéquat.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/lien3c.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/lien3e.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="10">
+            <h1>Les images, les audios et les vidéos</h1>
+            <div class="s7">
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Les images</h1>
+                        <p>La balise &lt;img> permet d'insérer une image.</p>
+                        <p>Il existe plusieurs attribus dont on peut citer src pour indiquer l'emplacement, width et height pour spécifier la longueur et la largeur et alt qui peut afficher un message en cas d'absence de l'image.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/Imagec.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/Imagee.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Les audios</h1>
+                        <p>La balise &lt;audio> permet d'insérer un audio.</p>
+                        <p>Elle peut être suivie par les attributs width, height, contols (pour ajouter les boutons de contrôle), autoplay (pour le lancer dès que la page se charge)...</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/audioc.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/audioe.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Les vidéos</h1>
+                        <p>La balise &lt;video> permet d'insérer un vidéo.</p>
+                        <p>De même, elle peut être suivie par les attributs width, height, contols, autoplay (pour les mêmes fonctionnalités), poster (pour ajouter un poster)...</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/videoc.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/videoe.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="11">
+            <h1>Les tableaux</h1>
+            <div class="s7">
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Les balises de base</h1>
+                        <p>La balise &lt;table> ... &lt;/table> permet de limiter un tableau.</p>
+                        <p>La balise &lt;tr> pour les lignes du tableau.</p>
+                        <p>La balise &lt;td> pour les cellules du tableau.</p>
+                        <p>La balise &lt;th> pour les cellules titre du tableau.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/tab1c.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/tab1e.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Organiser un tableau</h1>
+                        <p>La balise &lt;caption> permet d'ajouter un titre au tableau.</p>
+                        <p>La balise &lt;thead> pour préciser son en-tête.</p>
+                        <p>La balise &lt;tbody> pour préciser son corps.</p>
+                        <p>La balise &lt;tfoot> pour préciser son pied.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/tab2c.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/tab2e.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Fusionner des cellules</h1>
+                        <p>L'attribut rowspan permet de fusionner un nombre de lignes re&ccedil;u comme valeur.</p>
+                        <p>L'attribut colspan permet d'assurer la même fonctionnalité pour les colonnes.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/tab3c.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/tab3e.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="12">
+            <h1>Les formulaires</h1>
+            <div class="s7">
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>La balise form</h1>
+                        <p>La balise &lt;form> ... &lt;/form> permet de limiter un formulaire.</p>
+                        <p>L'attribut method permet de spécifier la méthode d'envoi: get ou post.</p>
+                        <p>L'attribut action permet de spécifier le script responsable du traitement des données.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/formc.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/forme.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Objets du formulaire</h1>
+                        <p>La balise &lt;label> permet de décrire l'input qui la suit, elle possède l'attribut for pour assurer la liaison.</p>
+                        <p>La balise &lt;input> de type text permet d'insérer une zone de texte et possède un id pour la liaison.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/textc.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/texte.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Objets du formulaire</h1>
+                        <p>La balise &lt;input> de type password permet d'insérer une zone pour taper les mots de passe.</p>
+                        <p>La balise &lt;input> de type email permet d'insérer une zone pour taper les emails.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/pwdc.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/pwde.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Objets du formulaire</h1>
+                        <p>La balise &lt;input> de type date permet d'insérer un calendrier pour choisir une date.</p>
+                        <p>La balise &lt;input> de type tel permet d'insérer une zone pour taper un numéro de téléphone.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/datec.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/datee.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Objets du formulaire</h1>
+                        <p>La balise &lt;input> de type number permet d'insérer une zone pour choisir un numéro.</p>
+                        <p>La balise &lt;textarea> permet d'insérer une zone de texte.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/numc.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/nume.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Objets du formulaire</h1>
+                        <p>La balise &lt;input> de type button permet d'insérer un bouton.</p>
+                        <p>La balise &lt;input> de type submit permet d'insérer un bouton d'enregistrement.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/boutonc.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/boutone.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Objets du formulaire</h1>
+                        <p>La balise &lt;input> de type radio permet de proposer plusieurs choix dont on peut choisir une et une seule.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/radioc.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/radioe.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Objets du formulaire</h1>
+                        <p>La balise &lt;input> de type checkbox permet de proposer de nombreux choix dont on peut choisir plusieurs.</p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/checkc.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/checke.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <div class="carte1">
+                        <h1>Objets du formulaire</h1>
+                        <p>La balise &lt;select> permet de proposer plusieurs options sous forme d'une liste.</p>
+                        <p>Chaque option est limitée par les balises &lt;option> ... &lt;/option></p>
+                    </div>
+                    <div class="carte2">
+                        <a href="../images/selectc.png" target="_blank">Cliquez-ici pour voir le code.</a>
+                        <a href="../images/selecte.png" target="_blank">Cliquez-ici pour voir l'affichage.</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

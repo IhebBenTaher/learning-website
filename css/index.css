@@ -1,0 +1,386 @@
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: black;
+    box-shadow: 0px 0px 10px rgb(221, 221, 230, 70%);
+    width: 100%;
+    position: sticky;
+    z-index: 2;
+    top:0;
+    height: 15vh;
+}
+header div{
+    width: 18%;
+    display: flex;
+    align-items: center;
+    height: 80%;
+    font-size:35px;
+}
+header img{
+    width: 3rem;
+    height: 3rem;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+header li{
+    font-size:27px;
+    margin: 0 20px;
+}
+#arrpl{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+#sec1{
+    background-image: linear-gradient(to right,rgb(40, 16, 107),rgb(255, 55, 55));
+    opacity: 0.9;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 120vh;
+}
+#sec1 div{
+    width: 60%;
+    height: 70%;
+}
+#sec1 h1{
+    font-size: 50px;
+    margin: 5% 10% 10%;
+}
+#sec1 p{
+    font-size: 25px;
+    margin: 10% 10%;
+}
+#sec2{
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    color: black;
+}
+.touscours{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.cours{
+    width: 300px;
+    position: relative;
+    margin: 0 10px 80px;
+    height: 400px;
+    overflow: hidden;
+}
+.cours img{
+    width: 100%;
+    height: 100%;
+}
+.cours div{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    top: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    transition: 0.5s;
+    opacity: 0.85;
+    background-image: linear-gradient(to bottom,rgb(40, 16, 107),rgb(255, 55, 55));
+    position: absolute;
+}
+.cours div:hover{
+    top:0%;
+}
+#sec2 h1{
+    font-size: 50px;
+    margin: 0;
+    margin: 5% 10% 10%;
+}
+#sec2 p{
+    font-size: 16.5spx;
+}
+#sec2 h2{
+    margin: 15px 0 0;
+}
+#sec2 a{
+    padding: 20px 33px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rebeccapurple;
+}
+#sec3{
+    background-image: linear-gradient(to right,rgb(40, 16, 107),rgb(255, 55, 55));
+    display: flex;
+    opacity: 0.9;
+    width: 100%;
+    height: 60vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+#sec3 h1{
+    font-size: 50px;
+    margin: 0;
+    margin-left: 10%;
+    color: white;
+}
+#sec3 img{
+    width: 350px;
+    height: 150px;
+    margin: 0;
+    margin-left: 10%;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+li a::before{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    transition: 0.4s;
+    background-image: linear-gradient(to right,rgb(40, 16, 107),rgb(255, 55, 55));
+    bottom: -5px;
+}
+#nos{
+    position: absolute;
+    bottom: 10%;
+}
+li a:hover::before{
+    width: 100%;
+}
+#icones{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 10%;
+}
+.cont{
+    display: flex;
+    background-color: blueviolet;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.icone{
+    color: white;
+    transition: 0.3s;
+    transform: scale(150%);
+}
+.cont:hover{
+    background-color: white;
+}
+.cont:hover .icone{
+    color: blueviolet;
+}
+@media(max-width:990px){
+    #sec1 div{
+        width: 75%;
+    }
+}
+@media(max-width:775px){
+    nav{
+        display: flex;
+        width: 63%;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+    }
+    nav>div{
+        width:50px;
+        height:50px;
+        background-color: black;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        justify-content: center;
+        transition: 0.4s;
+    }
+    nav>div:hover{
+        background-color: white;
+    }
+    nav>div:hover>div, nav ul:hover+div{
+        background-color: black;
+    }
+    nav>div>div{
+        width:30px;
+        transition: 0.4s;
+        height:5px;
+        margin: 2px 0;
+        background-color: white;
+    }
+    nav>ul{
+        display: none;
+    }
+    nav>div:hover+ul, nav ul:hover{
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        justify-content: center;
+        align-items:center;
+        align-content: center;
+        width: 170px;
+        background-color:transparent;
+        margin: 0;
+        padding: 0;
+        height: 150px;
+        bottom: -120px;
+    }
+    nav>div:hover+ul>li, nav ul:hover>li{
+        display: flex;
+        align-items: center;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        height: 25%;
+        transition: 0.4s;
+        width: 100%;
+    }
+    nav>div:hover+ul>li>a, nav ul:hover>li>a{
+        color:blueviolet;
+        transition: 0.4s;
+        margin-left: 15px;
+    }
+    nav>div:hover+ul> #special, nav ul:hover>#special{
+        background-color: transparent;
+    }
+    nav ul:hover>li:hover{
+        background-color: blueviolet;
+    }
+    nav ul:hover>li:hover>a{
+        color: white;
+        margin-left: 30px;
+    }
+    li a:hover::before{
+        width: 0;
+    }
+    #sec3 {
+        height: 50vh;
+    }
+}
+@media(max-width:732px){
+    #sec1 div{
+        width: 85%;
+    }
+}
+@media(max-width:620px){
+    #sec3 {
+        height: 40vh;
+    }
+}
+@media(max-width:530px){
+    #sec1 div{
+        width: 90%;
+    }
+    #sec3 {
+        height: 32vh;
+    }
+}
+@media(max-width:470px){
+    .cont{
+        width: 40px;
+        height: 40px;
+    }
+    .icone{
+        transform: scale(1.2);
+    }   
+}
+@media(max-width:410px){
+    #sec1 div{
+        width: 95%;
+    }
+    header{
+        height: 12vh;
+    }
+}
+@media(max-width:370px){
+    #sec1 p{
+        font-size: 22px;
+    }
+    header div{
+        font-size: 27px;
+    }
+    header img{
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+    #sec1 h1,#sec2 h1,#sec3 h1{
+        font-size: 40px;
+    }
+    #sec3{
+        height: 30vh;
+    }
+}
+@media(max-width:350px){
+    #sec1 p{
+        font-size: 19px;
+    }
+    .cont{
+        width: 35px;
+        height: 35px;
+    }
+    .icone{
+        transform: scale(1);
+    }
+    .cours{
+        margin-left: auto;
+        margin-right: auto;
+        width: 280px;
+    }
+    .cours p{
+        font-size: 14px;
+    }
+}
+@media(max-width:320px){
+    .cours{
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+    }
+    #sec3{
+        height: 25vh;
+    }
+    #sec1 h1,#sec2 h1,#sec3 h1{
+        font-size: 32px;
+    }
+    .cont{
+        width: 30px;
+        height: 30px;
+    }
+    .icone{
+        transform: scale(0.95);
+    }
+    header img{
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    header div{
+        font-size: 22px;
+    }
+}
